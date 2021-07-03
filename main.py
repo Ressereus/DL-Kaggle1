@@ -70,7 +70,7 @@ with tf.device('/device:GPU:0'):
     # Save weights only for best model
     checkpointer = ModelCheckpoint(filepath='weights_best.hdf5',
                                    verbose=2,
-                                   save_best_only=True)
+                                    save_best_only=True)
 
     model.fit(x_train,
               y_train,
